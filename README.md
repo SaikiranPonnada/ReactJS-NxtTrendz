@@ -10,11 +10,31 @@ In this project, let's build a **Nxt Trendz - Cart Features** by applying the co
 </div>
 <br/>
 
+<br/>
+<div style="text-align: center;">
+    <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-products-filter-group-output-v0.gif" alt="products filters group output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
+<br/>
+
+**Failure View**
+
+<br/>
+<div style="text-align: center;">
+    <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-products-filter-group-failure-view-output.gif" alt="products filters group failure output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
+<br/>
+
 ### Design Files
 
 <details>
 <summary>Click to view</summary>
 
+- [Extra Small (Size < 576px), Small (Size >= 576px), and Medium (Size >= 768px) - Login, Login Error, Home](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authentication-sm-outputs.png)
+- [Extra Small (Size < 576px), Small (Size >= 576px), and Medium (Size >= 768px) - Products, Cart](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authentication-sm-products-cart-outputs.png)
+- [Large (Size >= 992px) and Extra Large (Size >= 1200px) - Login](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authentication-lg-login-output.png)
+- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authentication-lg-home-output.png)
+- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Products](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authorisation-lg-products-output.png)
+- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Cart](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authorisation-lg-cart-output.png)
 - [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-sm-output-v0.png)
 - [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-lg-output.png)
 
@@ -29,57 +49,29 @@ In this project, let's build a **Nxt Trendz - Cart Features** by applying the co
 - Start up the app using `npm start`
 </details>
 
-### Completion Instructions
-
-<details>
-<summary>Functionality to be added</summary>
-<br/>
-
-The app must have the following functionalities
-
-- When an unauthenticated user tries to access the **Cart** Route, then the page should be navigated to **Login** Route
-
-- Following are the features to be implemented
-
-  - Feature 1
-
-    - When an authenticated user tries to add the same product multiple times
-      - The quantity of the product should be updated accordingly, and the count of the cart items in the header should be remained same
-
-  - Feature 2
-
-    - The total amount and number of items in the cart should be displayed in the **Cart** Route
-
-  - Feature 3
-
-    - In each cart item in the cart
-      - When the plus icon is clicked, then the quantity of the product should be incremented by one
-      - When the minus icon is clicked, then the quantity of the product should be decremented by one
-      - When the quantity of the product is one and the minus icon is clicked, then the respective product should be removed from the cart
-      - Based on the quantity of the product, the product price and the Cart Summary, i.e the total cost should be updated accordingly
-
-  - Feature 4
-
-    - When an authenticated user clicks on the remove button, cart item should be removed from the cart list
-
-  - Feature 5
-
-    - When an authenticated user clicks on the **Remove All** button, all the cart items should be removed from the cart and [Empty Cart View](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-empty-cart-view.png) should be displayed
-
-- The `CartContext` has an object as a value with the following properties
-  - `cartList` - this key stores the cart items
-  - `removeAllCartItems` - this method is used to remove all the cart items in the `cartList`
-  - `addCartItem` - this method adds the cart item to the `cartList`
-  - `removeCartItem` - this method removes the cart item from the `cartList`
-  - `incrementCartItemQuantity` - this method increases the quantity of a product in the `cartList`
-  - `decrementCartItemQuantity` - this method decreases the quantity of a product in the `cartList`
-
-</details>
 
 <details>
 <summary>Components Structure</summary>
 
+<div style="text-align: center;">
+    <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authentication-login-home-component-structure-breakdown.png" alt="nxt trendz authentication login and home component structure breakdown" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
 <br/>
+<div style="text-align: center;">
+    <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authentication-products-cart-component-structure-breakdown.png" alt="nxt trendz authentication products and cart component structure breakdown" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
+<br/>
+
+<div style="text-align: center;">
+    <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-products-filter-group-component-structure-breakdown.png" alt="component-breakdown-structure" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
+<br/>
+
+<div style="text-align: center;">
+    <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-specific-product-details-component-breakdown-structure.png" alt="component breakdown structure" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
+<br/>
+
 <div style="text-align: center;">
     <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-component-structure-breakdown.png" alt="component structure breakdown" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
 </div>
@@ -87,20 +79,6 @@ The app must have the following functionalities
 
 </details>
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
-
-Use these files to complete the implementation:
-
-- `src/App.js`
-- `src/components/Cart/index.js`
-- `src/components/Cart/index.css`
-- `src/components/CartItem/index.js`
-- `src/components/CartItem/index.css`
-- `src/components/CartSummary/index.js`
-- `src/components/CartSummary/index.css`
-</details>
 
 ### Quick Tips
 
